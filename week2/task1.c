@@ -7,7 +7,7 @@ int main()
   float b=FLT_MAX;
   double d=DBL_MAX;
   printf("The integer is %d\n", a);
-  printf("The float is %f\n", a);
   printf("The float is %d\n", a);
+  printf("The float is %f\n", a);
 }
 
