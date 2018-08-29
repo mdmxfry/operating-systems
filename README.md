@@ -1,1 +1,1 @@
-# operationg-systems
+# operating-systems
