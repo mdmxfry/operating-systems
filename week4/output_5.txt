@@ -1,0 +1,368 @@
+-+= 00001 root /sbin/launchd
+ |--= 00042 root /usr/sbin/syslogd
+ |--= 00043 root /usr/libexec/UserEventAgent (System)
+ |--= 00046 root /System/Library/PrivateFrameworks/Uninstall.framework/Resources/uninstalld
+ |--= 00047 root /usr/libexec/kextd
+ |--= 00048 root /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/FSEvents.framework/Versions/A/Support/fseventsd
+ |--= 00050 root /System/Library/PrivateFrameworks/MediaRemote.framework/Support/mediaremoted
+ |--= 00052 _appleevents /System/Library/CoreServices/appleeventsd --server
+ |-+= 00053 root /usr/sbin/systemstats --daemon
+ | \--- 00250 root /usr/sbin/systemstats --logger-helper /private/var/db/systemstats
+ |--= 00055 root /usr/libexec/configd
+ |--= 00056 root /Library/Application Support/iStat Menus 6/iStatMenusDaemon
+ |--= 00057 root /System/Library/CoreServices/powerd.bundle/powerd
+ |--= 00060 root /usr/libexec/logd
+ |--= 00061 root /usr/libexec/keybagd -t 15
+ |--= 00066 root /usr/libexec/warmd
+ |--= 00067 root /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Support/mds
+ |--= 00068 _iconservices /System/Library/CoreServices/iconservicesd
+ |--= 00069 root /System/Library/CoreServices/iconservicesagent
+ |--= 00070 root /usr/libexec/diskarbitrationd
+ |--= 00072 root /Library/Application Support/Adobe/AdobeGCClient/AGMService
+ |--= 00074 root /System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd-helper -launchd
+ |--= 00075 root /usr/libexec/coreduetd
+ |--= 00079 root /usr/libexec/opendirectoryd
+ |--= 00080 root /System/Library/PrivateFrameworks/ApplePushService.framework/apsd
+ |--= 00081 root /Library/PrivilegedHelperTools/com.docker.vmnetd
+ |--= 00082 root /System/Library/PrivateFrameworks/Noticeboard.framework/Versions/A/Resources/nbstated
+ |--= 00083 root /System/Library/CoreServices/launchservicesd
+ |--= 00084 _timed /usr/libexec/timed
+ |--= 00085 root /usr/sbin/securityd -i
+ |--= 00086 _usbmuxd /System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/usbmuxd -launchd
+ |--= 00088 _locationd /usr/libexec/locationd
+ |-+= 00089 postgres /Library/PostgreSQL/9.5/bin/postmaster -D/Library/PostgreSQL/9.5/data
+ | |--= 00167 postgres postgres: logger process    
+ | |--= 00169 postgres postgres: checkpointer process    
+ | |--= 00171 postgres postgres: writer process    
+ | |--= 00173 postgres postgres: wal writer process    
+ | |--= 00174 postgres postgres: autovacuum launcher process    
+ | \--= 00176 postgres postgres: stats collector process    
+ |--= 00090 root autofsd
+ |--= 00091 _displaypolicyd /usr/libexec/displaypolicyd -k 1
+ |--= 00092 root /usr/libexec/dasd
+ |--= 00095 mdmxlager /System/Library/CoreServices/loginwindow.app/Contents/MacOS/loginwindow console
+ |--= 00096 root /System/Library/CoreServices/logind
+ |--= 00097 root /System/Library/PrivateFrameworks/GenerationalStorage.framework/Versions/A/Support/revisiond
+ |--= 00098 root /usr/sbin/KernelEventAgent
+ |--= 00100 root /usr/sbin/bluetoothd
+ |--= 00101 _hidd /usr/libexec/hidd
+ |--= 00102 root /usr/libexec/corebrightnessd --launchd
+ |--= 00103 root /usr/libexec/AirPlayXPCHelper
+ |--= 00104 root /usr/libexec/amfid
+ |--= 00105 root /usr/sbin/notifyd
+ |--= 00106 _distnote /usr/sbin/distnoted daemon
+ |--= 00107 root /usr/sbin/cfprefsd daemon
+ |--= 00109 root /System/Library/Frameworks/Security.framework/Versions/A/XPCServices/authd.xpc/Contents/MacOS/authd
+ |--= 00110 root /System/Library/CoreServices/coreservicesd
+ |--= 00111 root aslmanager
+ |--= 00112 root /usr/libexec/taskgated -s
+ |--= 00119 root /usr/libexec/nehelper
+ |--= 00121 root /usr/libexec/airportd
+ |--= 00122 _coreaudiod /usr/sbin/coreaudiod
+ |--= 00124 root /System/Library/Frameworks/PCSC.framework/Versions/A/XPCServices/com.apple.ctkpcscd.xpc/Contents/MacOS/com.apple.ctkpcscd
+ |--= 00126 _coreaudiod /System/Library/Frameworks/CoreAudio.framework/Versions/A/XPCServices/com.apple.audio.DriverHelper.xpc/Contents/MacOS/com.apple.audio.DriverHelper
+ |--= 00127 root /usr/libexec/trustd
+ |--= 00132 _ctkd /System/Library/Frameworks/CryptoTokenKit.framework/ctkd -s
+ |--= 00149 _mdnsresponder /usr/sbin/mDNSResponder
+ |--= 00150 root /usr/sbin/mDNSResponderHelper
+ |--= 00151 root /usr/libexec/findmydeviced
+ |--= 00152 root /System/Library/PrivateFrameworks/WirelessDiagnostics.framework/Support/awdd
+ |--= 00153 _analyticsd /System/Library/PrivateFrameworks/CoreAnalytics.framework/Support/analyticsd
+ |--= 00154 _nsurlsessiond /usr/libexec/nsurlsessiond --privileged
+ |--= 00158 _windowserver /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer -daemon
+ |--= 00160 root /System/Library/PrivateFrameworks/SignpostNotification.framework/Versions/A/XPCServices/signpost_notificationd.xpc/Contents/MacOS/signpost_notificationd
+ |--= 00161 root /usr/libexec/apfsd
+ |--= 00162 root /usr/libexec/secinitd
+ |--= 00163 root /usr/libexec/usbd
+ |--= 00164 root /usr/libexec/powerlogd
+ |--= 00165 root /System/Library/CryptoTokenKit/com.apple.ifdreader.slotd/Contents/MacOS/com.apple.ifdreader
+ |--= 00177 _networkd /usr/libexec/symptomsd
+ |--= 00179 root /usr/libexec/syspolicyd
+ |--= 00182 root /usr/libexec/mobileassetd
+ |--= 00201 _nsurlstoraged /usr/libexec/nsurlstoraged --privileged
+ |--= 00202 _locationd /System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServices/com.apple.geod.xpc/Contents/MacOS/com.apple.geod
+ |--= 00203 _applepay /usr/libexec/nfcd
+ |--= 00204 _locationd /usr/libexec/secinitd
+ |--= 00206 root /usr/libexec/diskmanagementd
+ |--= 00207 _locationd /usr/sbin/cfprefsd agent
+ |--= 00213 root /usr/libexec/sandboxd
+ |--= 00214 root /usr/libexec/lsd runAsRoot
+ |--= 00216 root /System/Library/PrivateFrameworks/CoreSymbolication.framework/coresymbolicationd
+ |--= 00217 root /usr/libexec/watchdogd
+ |--= 00218 root /usr/libexec/thermald
+ |--= 00219 _locationd /usr/libexec/trustd --agent
+ |--= 00220 root /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mds_stores
+ |--= 00221 root /System/Library/PrivateFrameworks/AuthKit.framework/Versions/A/Support/akd
+ |--= 00222 _fpsd /System/Library/PrivateFrameworks/CoreADI.framework/adid
+ |--= 00224 root /System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/CVMServer
+ |--= 00225 root /usr/libexec/colorsync.displayservices
+ |--= 00231 root /System/Library/Frameworks/AudioToolbox.framework/AudioComponentRegistrar -daemon
+ |--= 00232 root /usr/libexec/colorsyncd
+ |--= 00233 root /System/Library/Frameworks/Security.framework/Versions/A/XPCServices/com.apple.CodeSigningHelper.xpc/Contents/MacOS/com.apple.CodeSigningHelper
+ |--= 00236 _coreaudiod /System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper
+ |--= 00237 root /usr/libexec/bootinstalld
+ |--= 00242 root /usr/libexec/sysmond
+ |--= 00244 root /System/Library/Frameworks/CryptoTokenKit.framework/ctkahp.bundle/Contents/MacOS/ctkahp -d
+ |--= 00247 root /System/Library/PrivateFrameworks/AccountPolicy.framework/XPCServices/com.apple.AccountPolicyHelper.xpc/Contents/MacOS/com.apple.AccountPolicyHelper
+ |--= 00251 root /System/Library/Frameworks/CoreMediaIO.framework/Versions/A/XPCServices/com.apple.cmio.registerassistantservice.xpc/Contents/MacOS/com.apple.cmio.registerassistantservice
+ |--= 00253 _cmiodalassistants /Library/CoreMediaIO/Plug-Ins/DAL/AppleCamera.plugin/Contents/Resources/AppleCameraAssistant
+ |--= 00254 root /System/Library/PrivateFrameworks/PerformanceAnalysis.framework/Versions/A/XPCServices/com.apple.PerformanceAnalysis.animationperfd.xpc/Contents/MacOS/com.apple.PerformanceAnalysis.animationperfd
+ |--= 00255 root /System/Library/Frameworks/GSS.framework/Helpers/GSSCred
+ |--= 00259 root /System/Library/CoreServices/sharedfilelistd
+ |--= 00264 root /System/Library/Frameworks/LocalAuthentication.framework/Support/coreauthd
+ |--= 00265 root /usr/libexec/securityd_service
+ |--= 00266 mdmxlager /usr/sbin/cfprefsd agent
+ |--= 00267 mdmxlager /usr/libexec/UserEventAgent (Aqua)
+ |--= 00269 mdmxlager /usr/sbin/distnoted agent
+ |--= 00271 mdmxlager /System/Library/Frameworks/CoreTelephony.framework/Support/CommCenter -L
+ |--= 00272 mdmxlager /usr/libexec/trustd --agent
+ |--= 00273 mdmxlager /System/Library/CoreServices/Dock.app/Contents/MacOS/Dock
+ |--= 00274 mdmxlager /System/Library/CoreServices/talagent
+ |--= 00275 mdmxlager /usr/libexec/lsd
+ |--= 00276 mdmxlager /System/Library/CoreServices/SystemUIServer.app/Contents/MacOS/SystemUIServer
+ |--= 00277 mdmxlager /System/Library/CoreServices/Finder.app/Contents/MacOS/Finder
+ |--= 00278 mdmxlager /usr/libexec/secd
+ |--= 00279 mdmxlager /System/Library/PrivateFrameworks/CloudDocsDaemon.framework/Versions/A/Support/bird
+ |--= 00282 mdmxlager /usr/libexec/pboard
+ |--= 00284 mdmxlager /System/Library/CoreServices/sharedfilelistd
+ |--= 00285 mdmxlager /usr/libexec/pkd
+ |--= 00288 mdmxlager /System/Library/PrivateFrameworks/TCC.framework/Resources/tccd
+ |--= 00291 mdmxlager /System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd
+ |--= 00292 mdmxlager /System/Library/Frameworks/Accounts.framework/Versions/A/Support/accountsd
+ |--= 00293 mdmxlager /System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Support/fontd
+ |--= 00294 mdmxlager /usr/libexec/nsurlsessiond
+ |--= 00296 mdmxlager /System/Library/PrivateFrameworks/UserActivity.framework/Agents/useractivityd
+ |--= 00297 mdmxlager /System/Library/CoreServices/Dock.app/Contents/XPCServices/com.apple.dock.extra.xpc/Contents/MacOS/com.apple.dock.extra
+ |--= 00298 mdmxlager /System/Library/CoreServices/iconservicesagent
+ |--= 00300 root /usr/sbin/filecoordinationd
+ |--= 00301 mdmxlager /usr/sbin/usernoted
+ |--= 00302 mdmxlager /usr/libexec/nsurlstoraged
+ |--= 00303 mdmxlager /usr/libexec/sharingd
+ |--= 00304 mdmxlager /System/Library/CoreServices/NotificationCenter.app/Contents/MacOS/NotificationCenter
+ |--= 00305 mdmxlager /System/Library/CoreServices/Spotlight.app/Contents/MacOS/Spotlight
+ |--= 00306 root /usr/sbin/WirelessRadioManagerd
+ |--= 00307 mdmxlager /System/Library/PrivateFrameworks/TelephonyUtilities.framework/callservicesd
+ |--= 00309 mdmxlager /System/Library/Frameworks/Security.framework/Versions/A/Resources/CloudKeychainProxy.bundle/Contents/MacOS/CloudKeychainProxy
+ |--= 00310 mdmxlager /System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/Contents/MacOS/identityservicesd
+ |--= 00311 mdmxlager /System/Library/PrivateFrameworks/IMCore.framework/imagent.app/Contents/MacOS/imagent
+ |--= 00312 root /usr/sbin/wirelessproxd
+ |--= 00313 mdmxlager /System/Library/PrivateFrameworks/CalendarAgent.framework/Executables/CalendarAgent
+ |--= 00314 mdmxlager /System/Library/CoreServices/mapspushd
+ |--= 00315 mdmxlager /usr/libexec/knowledge-agent
+ |--= 00317 mdmxlager /System/Library/CoreServices/cloudphotosd.app/Contents/MacOS/cloudphotosd
+ |--= 00318 mdmxlager /System/Library/PrivateFrameworks/CoreCDP.framework/Versions/A/Resources/cdpd
+ |--= 00319 mdmxlager /System/Library/PrivateFrameworks/PassKitCore.framework/passd
+ |--= 00320 mdmxlager /usr/libexec/secinitd
+ |--= 00321 mdmxlager /System/Library/Frameworks/AddressBook.framework/Executables/ContactsAccountsService
+ |--= 00322 mdmxlager /System/Library/PrivateFrameworks/CoreWLANKit.framework/Versions/A/XPCServices/WiFiProxy.xpc/Contents/MacOS/WiFiProxy
+ |--= 00323 root /usr/sbin/spindump
+ |--= 00324 mdmxlager /usr/libexec/spindump_agent
+ |--= 00326 mdmxlager /System/Library/PrivateFrameworks/MessagesKit.framework/Resources/soagent.app/Contents/MacOS/soagent
+ |--= 00327 root /System/Library/CoreServices/SubmitDiagInfo server-init
+ |--= 00328 mdmxlager /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/storeaccountd
+ |--= 00329 root /System/Library/PrivateFrameworks/TCC.framework/Resources/tccd system
+ |--= 00330 mdmxlager /System/Library/PrivateFrameworks/CallHistory.framework/Support/CallHistoryPluginHelper
+ |--= 00331 mdmxlager /System/Library/PrivateFrameworks/CalendarNotification.framework/Versions/A/XPCServices/CalNCService.xpc/Contents/MacOS/CalNCService
+ |--= 00332 mdmxlager /System/Library/PrivateFrameworks/CloudPhotoServices.framework/Versions/A/Frameworks/CloudPhotosConfigurationXPC.framework/Versions/A/XPCServices/com.apple.CloudPhotosConfiguration.xpc/Contents/MacOS/com.apple.CloudPhotosConfiguration
+ |--= 00333 mdmxlager /usr/libexec/siriknowledged
+ |--= 00334 mdmxlager /usr/libexec/keyboardservicesd
+ |--= 00335 mdmxlager /usr/libexec/SafariCloudHistoryPushAgent
+ |--= 00336 mdmxlager /System/Library/PrivateFrameworks/AssistantServices.framework/Versions/A/Support/assistantd
+ |--= 00337 mdmxlager /System/Library/PrivateFrameworks/AuthKit.framework/Versions/A/Support/akd
+ |--= 00338 mdmxlager /System/Library/CoreServices/SafariSupport.bundle/Contents/MacOS/SafariBookmarksSyncAgent
+ |--= 00339 mdmxlager /System/Library/PrivateFrameworks/CoreSuggestions.framework/Versions/A/Support/suggestd
+ |--= 00340 mdmxlager /usr/libexec/fmfd
+ |--= 00343 mdmxlager /System/Library/PrivateFrameworks/CoreParsec.framework/parsecd
+ |--= 00344 mdmxlager /System/Library/PrivateFrameworks/IMDPersistence.framework/XPCServices/IMDPersistenceAgent.xpc/Contents/MacOS/IMDPersistenceAgent
+ |--= 00345 mdmxlager /System/Library/PrivateFrameworks/ProtectedCloudStorage.framework/Helpers/ProtectedCloudKeySyncing
+ |--= 00346 root /usr/libexec/periodic-wrapper daily
+ |--= 00347 _softwareupdate /System/Library/CoreServices/Software Update.app/Contents/Resources/softwareupdated
+ |--= 00348 mdmxlager /System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServices/com.apple.geod.xpc/Contents/MacOS/com.apple.geod
+ |--= 00349 mdmxlager /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/commerce
+ |--= 00350 root /usr/sbin/systemsoundserverd
+ |--= 00351 _captiveagent /usr/libexec/captiveagent
+ |--= 00352 mdmxlager /usr/libexec/rapportd
+ |--= 00353 mdmxlager /System/Library/Frameworks/LocalAuthentication.framework/Support/coreauthd
+ |--= 00356 mdmxlager /System/Library/PrivateFrameworks/IMFoundation.framework/XPCServices/IMRemoteURLConnectionAgent.xpc/Contents/MacOS/IMRemoteURLConnectionAgent
+ |--= 00358 mdmxlager /System/Library/PrivateFrameworks/IMFoundation.framework/XPCServices/IMRemoteURLConnectionAgent.xpc/Contents/MacOS/IMRemoteURLConnectionAgent
+ |--= 00359 mdmxlager /System/Library/CoreServices/CoreLocationAgent.app/Contents/MacOS/CoreLocationAgent
+ |--= 00360 mdmxlager /System/Library/PrivateFrameworks/IMFoundation.framework/XPCServices/IMRemoteURLConnectionAgent.xpc/Contents/MacOS/IMRemoteURLConnectionAgent
+ |--= 00361 mdmxlager /System/Library/CoreServices/NotificationCenter.app/Contents/XPCServices/com.apple.notificationcenterui.WeatherSummary.xpc/Contents/MacOS/com.apple.notificationcenterui.WeatherSummary
+ |--= 00362 mdmxlager /System/Library/PrivateFrameworks/WeatherKit.framework/Versions/A/XPCServices/com.apple.WeatherKitService.xpc/Contents/MacOS/com.apple.WeatherKitService
+ |--= 00368 mdmxlager /System/Library/PrivateFrameworks/ViewBridge.framework/Versions/A/XPCServices/ViewBridgeAuxiliary.xpc/Contents/MacOS/ViewBridgeAuxiliary
+ |--= 00369 root /System/Library/PrivateFrameworks/AmbientDisplay.framework/Versions/A/XPCServices/com.apple.AmbientDisplayAgent.xpc/Contents/MacOS/com.apple.AmbientDisplayAgent
+ |--= 00371 mdmxlager /System/Library/PrivateFrameworks/CloudDocsDaemon.framework/XPCServices/ContainerMetadataExtractor.xpc/Contents/MacOS/ContainerMetadataExtractor
+ |--= 00374 mdmxlager /System/Library/PrivateFrameworks/FileProvider.framework/Support/fileproviderd
+ |--= 00375 mdmxlager /usr/libexec/routined LAUNCHED_BY_LAUNCHD
+ |--= 00376 mdmxlager /usr/sbin/ckkeyrolld
+ |--= 00378 mdmxlager /System/Library/CoreServices/SocialPushAgent.app/Contents/MacOS/SocialPushAgent
+ |--= 00381 mdmxlager /usr/libexec/dmd
+ |--= 00382 mdmxlager /System/Library/Frameworks/InputMethodKit.framework/Resources/imklaunchagent
+ |--= 00383 mdmxlager /System/Library/CoreServices/Siri.app/Contents/MacOS/Siri launchd
+ |--= 00384 mdmxlager /System/Library/Image Capture/Support/icdd
+ |--= 00385 mdmxlager /Users/mdmxlager/Library/Application Support/TunnelBear/com.tunnelbear.mac.tbeara
+ |-+= 00387 mdmxlager /usr/local/opt/postgresql/bin/postgres -D /usr/local/var/postgres
+ | |--= 00410 mdmxlager postgres: checkpointer process     
+ | |--= 00411 mdmxlager postgres: writer process     
+ | |--= 00412 mdmxlager postgres: wal writer process     
+ | |--= 00413 mdmxlager postgres: autovacuum launcher process     
+ | |--= 00414 mdmxlager postgres: stats collector process     
+ | \--= 00415 mdmxlager postgres: bgworker: logical replication launcher     
+ |--= 00389 mdmxlager /System/Library/CoreServices/AirPlayUIAgent.app/Contents/MacOS/AirPlayUIAgent --launchd
+ |--= 00390 mdmxlager /System/Library/CoreServices/cloudpaird
+ |--= 00393 mdmxlager /System/Library/PrivateFrameworks/Noticeboard.framework/Versions/A/Resources/nbagent.app/Contents/MacOS/nbagent
+ |--= 00394 mdmxlager /System/Library/CoreServices/diagnostics_agent
+ |--= 00397 mdmxlager /System/Library/CoreServices/backgroundtaskmanagementagent
+ |--= 00398 mdmxlager /System/Library/Frameworks/CryptoTokenKit.framework/ctkahp.bundle/Contents/MacOS/ctkahp
+ |--= 00399 mdmxlager /Applications/Flux.app/Contents/MacOS/Flux
+ |--= 00401 mdmxlager /System/Library/Frameworks/CryptoTokenKit.framework/ctkd -tw
+ |--= 00402 mdmxlager /System/Library/Input Methods/PressAndHold.app/Contents/PlugIns/PAH_Extension.appex/Contents/MacOS/PAH_Extension
+ |--= 00403 mdmxlager /System/Library/PrivateFrameworks/ContactsAgent.framework/Executables/ContactsAgent
+ |--= 00404 root /System/Library/Frameworks/ApplicationServices.framework/Frameworks/SpeechSynthesis.framework/Resources/com.apple.speech.speechsynthesisd
+ |--= 00406 mdmxlager /Applications/iTunes.app/Contents/MacOS/iTunesHelper.app/Contents/MacOS/iTunesHelper
+ |--= 00408 mdmxlager /private/var/folders/fy/jvbwg96j4yv7shd8c0qgbmyw0000gn/T/AppTranslocation/D08AC106-3789-4E46-BF7E-3524486D956E/d/MenuMetersApp.app/Contents/MacOS/MenuMetersApp
+ |--= 00419 root /System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper
+ |--= 00424 mdmxlager /Users/mdmxlager/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/ipcserver
+ |--= 00425 mdmxlager /System/Library/PrivateFrameworks/CacheDelete.framework/deleted
+ |--= 00432 mdmxlager /usr/libexec/networkserviceproxy
+ |--= 00433 root /System/Library/CoreServices/CrashReporterSupportHelper server-init
+ |--= 00434 mdmxlager /System/Library/CoreServices/WiFiAgent.app/Contents/MacOS/WiFiAgent
+ |--= 00435 mdmxlager /System/Library/CoreServices/APFSUserAgent
+ |--= 00436 mdmxlager SafeEjectGPUAgent
+ |--= 00437 mdmxlager /System/Library/CoreServices/Menu Extras/SafeEjectGPUExtra.menu/Contents/XPCServices/SafeEjectGPUService.xpc/Contents/MacOS/SafeEjectGPUService
+ |-+= 00439 mdmxlager /Users/mdmxlager/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/steam_osx -skipinitialbootstrap
+ | \-+= 00477 mdmxlager /Users/mdmxlager/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/steam_osx -skipinitialbootstrap
+ |   \-+- 00479 mdmxlager /Users/mdmxlager/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/Frameworks/Steam Helper.app/Contents/MacOS/Steam Helper -lang=en_US -cachedir=/Users/mdmxlager/Library/Application Support/Steam/config/htmlcache -steampid=439 -buildid=1535576546 -steamid=0 -steamuniverse=Dev -clientui=/Users/mdmxlager/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/clientui --disable-spell-checking --disable-out-of-process-pac --enable-blink-features=ResizeObserver,Worklet,AudioWorklet --disable-features=TouchpadAndWheelScrollLatching,AsyncWheelEvents --enable-media-stream --disable-smooth-scrolling --disable-gpu-compositing --disable-gpu --log-file=/Users/mdmxlager/Library/Application Support/Steam/logs/cef_log.txt
+ |     |--- 00530 mdmxlager /Users/mdmxlager/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/Frameworks/Steam Helper.app/Contents/MacOS/Steam Helper --type=renderer --disable-features=AsyncWheelEvents,TouchpadAndWheelScrollLatching --disable-gpu-compositing --service-pipe-token=579B3F1F22D63A1F61491D9A1F87BAB2 --enable-blink-features=ResizeObserver,Worklet,AudioWorklet --lang=en-US --locales-dir-path=/Users/mdmxlager/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/Frameworks/Steam Helper.app/Contents//bin/locales --log-file=/Users/mdmxlager/Library/Application Support/Steam/logs/cef_log.txt --product-version=Valve Steam Client --webview-urls=http://localhost/*,http://steamloopback.host/*,https://steamloopback.host/*,https://localhost/* --disable-spell-checking --num-raster-threads=2 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --service-request-channel-token=579B3F1F22D63A1F61491D9A1F87BAB2 --renderer-client-id=2
+ |     \--- 00533 mdmxlager /Users/mdmxlager/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/Frameworks/Steam Helper.app/Contents/MacOS/Steam Helper --type=renderer --disable-features=AsyncWheelEvents,TouchpadAndWheelScrollLatching --disable-gpu-compositing --service-pipe-token=0D059DB43F86A98BFD4F6A9A0ECBC905 --enable-blink-features=ResizeObserver,Worklet,AudioWorklet --lang=en-US --locales-dir-path=/Users/mdmxlager/Library/Application Support/Steam/Steam.AppBundle/Steam/Contents/Frameworks/Steam Helper.app/Contents//bin/locales --log-file=/Users/mdmxlager/Library/Application Support/Steam/logs/cef_log.txt --product-version=Valve Steam Client --webview-urls=http://localhost/*,http://steamloopback.host/*,https://steamloopback.host/*,https://localhost/* --disable-spell-checking --num-raster-threads=2 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --service-request-channel-token=0D059DB43F86A98BFD4F6A9A0ECBC905 --renderer-client-id=3
+ |--= 00440 mdmxlager /usr/libexec/silhouette
+ |--= 00441 mdmxlager /System/Library/PrivateFrameworks/PhotoAnalysis.framework/Versions/A/Support/photoanalysisd
+ |--= 00443 mdmxlager /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/corespotlightd
+ |--= 00444 mdmxlager /System/Library/PrivateFrameworks/PhotoLibraryPrivate.framework/Versions/A/Support/photolibraryd
+ |--= 00445 mdmxlager /System/Library/PrivateFrameworks/CoreFollowUp.framework/Versions/A/Support/followupd
+ |--= 00446 mdmxlager /System/Library/PrivateFrameworks/QuickLookThumbnailing.framework/Support/com.apple.quicklook.ThumbnailsAgent
+ |--= 00470 mdmxlager /System/Library/PrivateFrameworks/AssistantServices.framework/Versions/A/XPCServices/media-indexer.xpc/Contents/MacOS/media-indexer
+ |--= 00471 mdmxlager /System/Library/CoreServices/pbs
+ |--= 00476 mdmxlager /usr/libexec/swcd
+ |--= 00490 _gamecontrollerd /usr/libexec/gamecontrollerd
+ |--= 00518 mdmxlager /System/Library/CoreServices/Software Update.app/Contents/Resources/softwareupdate_notify_agent
+ |--= 00519 root /System/Library/CoreServices/Software Update.app/Contents/Resources/suhelperd
+ |--= 00521 mdmxlager /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/storelegacy
+ |--= 00522 mdmxlager /Library/Frameworks/iTunesLibrary.framework/Versions/A/XPCServices/com.apple.iTunesLibraryService.xpc/Contents/MacOS/com.apple.iTunesLibraryService
+ |--= 00524 mdmxlager /System/Library/CoreServices/EscrowSecurityAlert.app/Contents/MacOS/EscrowSecurityAlert
+ |--= 00525 mdmxlager /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/storeassetd
+ |--= 00526 mdmxlager /System/Library/PrivateFrameworks/CloudServices.framework/Versions/A/XPCServices/com.apple.sbd.xpc/Contents/MacOS/com.apple.sbd
+ |--= 00528 root /usr/bin/sysdiagnose
+ |--= 00529 _assetcache /usr/libexec/AssetCache/AssetCache
+ |--= 00531 root /usr/libexec/dmd
+ |--= 00532 mdmxlager /System/Library/PrivateFrameworks/PhotoLibraryPrivate.framework/Versions/A/Frameworks/PhotoLibraryServices.framework/Versions/A/XPCServices/com.apple.photomodel.xpc/Contents/MacOS/com.apple.photomodel
+ |--= 00544 mdmxlager /System/Library/PrivateFrameworks/CommerceKit.framework/Resources/LaterAgent.app/Contents/MacOS/LaterAgent
+ |--= 00550 _locationd /usr/sbin/distnoted agent
+ |--= 00552 mdmxlager /System/Library/Frameworks/AudioToolbox.framework/AudioComponentRegistrar
+ |--= 00553 mdmxlager /System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper
+ |--= 00554 mdmxlager /System/Library/PrivateFrameworks/PhotoLibraryPrivate.framework/Versions/A/Frameworks/PhotoLibraryServices.framework/Versions/A/XPCServices/com.apple.photomoments.xpc/Contents/MacOS/com.apple.photomoments
+ |--= 00555 mdmxlager /System/Library/CoreServices/ScopedBookmarkAgent
+ |--= 00556 mdmxlager /System/Library/PrivateFrameworks/PhotoLibrary.framework/Versions/A/XPCServices/com.apple.PhotoIngestService.xpc/Contents/MacOS/com.apple.PhotoIngestService
+ |--= 00557 mdmxlager /System/Library/PrivateFrameworks/AssetCacheServices.framework/Versions/A/XPCServices/AssetCacheLocatorService.xpc/Contents/MacOS/AssetCacheLocatorService -a
+ |--= 00559 mdmxlager /System/Library/PrivateFrameworks/AssistantServices.framework/Versions/A/Support/assistant_service
+ |--= 00565 mdmxlager /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+ |--= 00566 mdmxlager /Library/Frameworks/iTunesLibrary.framework/Versions/A/XPCServices/com.apple.iTunesLibraryService.xpc/Contents/MacOS/com.apple.iTunesLibraryService
+ |--= 00567 _spotlight /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker-sizing -c MDSSizingWorker -m com.apple.mdworker.sizing
+ |--= 00570 mdmxlager /usr/libexec/USBAgent
+ |--= 00574 _spotlight /usr/libexec/trustd --agent
+ |--= 00585 postgres /usr/sbin/cfprefsd agent
+ |--= 00586 postgres /usr/libexec/lsd
+ |--= 00587 postgres /usr/libexec/trustd --agent
+ |--= 00588 postgres /usr/sbin/distnoted agent
+ |--= 00589 _spotlight /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+ |--= 00590 _spotlight /usr/sbin/distnoted agent
+ |--= 00592 mdmxlager /System/Library/CoreServices/Siri.app/Contents/XPCServices/SiriNCService.xpc/Contents/MacOS/SiriNCService
+ |--= 00606 root /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/storeinstalld
+ |--= 00607 mdmxlager /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/XPCServices/com.apple.CommerceKit.TransactionService.xpc/Contents/MacOS/com.apple.CommerceKit.TransactionService
+ |--= 00616 mdmxlager /System/Library/PrivateFrameworks/IMDPersistence.framework/IMAutomaticHistoryDeletionAgent.app/Contents/MacOS/IMAutomaticHistoryDeletionAgent
+ |--= 00620 mdmxlager /System/Library/PrivateFrameworks/ContactsDonation.framework/Versions/A/Support/contactsdonationagent
+ |-+= 00627 mdmxlager /Applications/Firefox.app/Contents/MacOS/firefox
+ | |--- 00629 mdmxlager /Applications/Firefox.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -childID 2 -isForBrowser -prefsLen 19423 -schedulerPrefs 0001,2 -parentBuildID 20180830143136 -greomni /Applications/Firefox.app/Contents/Resources/omni.ja -appomni /Applications/Firefox.app/Contents/Resources/browser/omni.ja -appdir /Applications/Firefox.app/Contents/Resources/browser -profile /Users/mdmxlager/Library/Application Support/Firefox/Profiles/h6xsoon7.default 627 gecko-crash-server-pipe.627 org.mozilla.machname.454119957 tab
+ | |--- 00796 mdmxlager /Applications/Firefox.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -childID 6 -isForBrowser -prefsLen 23676 -schedulerPrefs 0001,2 -parentBuildID 20180830143136 -greomni /Applications/Firefox.app/Contents/Resources/omni.ja -appomni /Applications/Firefox.app/Contents/Resources/browser/omni.ja -appdir /Applications/Firefox.app/Contents/Resources/browser -profile /Users/mdmxlager/Library/Application Support/Firefox/Profiles/h6xsoon7.default 627 gecko-crash-server-pipe.627 org.mozilla.machname.1009554787 tab
+ | |--- 02303 mdmxlager /Applications/Firefox.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -childID 12 -isForBrowser -prefsLen 23680 -schedulerPrefs 0001,2 -parentBuildID 20180830143136 -greomni /Applications/Firefox.app/Contents/Resources/omni.ja -appomni /Applications/Firefox.app/Contents/Resources/browser/omni.ja -appdir /Applications/Firefox.app/Contents/Resources/browser -profile /Users/mdmxlager/Library/Application Support/Firefox/Profiles/h6xsoon7.default 627 gecko-crash-server-pipe.627 org.mozilla.machname.1292099606 tab
+ | |--- 02341 mdmxlager /Applications/Firefox.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -childID 13 -isForBrowser -prefsLen 23680 -schedulerPrefs 0001,2 -parentBuildID 20180830143136 -greomni /Applications/Firefox.app/Contents/Resources/omni.ja -appomni /Applications/Firefox.app/Contents/Resources/browser/omni.ja -appdir /Applications/Firefox.app/Contents/Resources/browser -profile /Users/mdmxlager/Library/Application Support/Firefox/Profiles/h6xsoon7.default 627 gecko-crash-server-pipe.627 org.mozilla.machname.439902878 tab
+ | \--- 02353 mdmxlager /Applications/Firefox.app/Contents/MacOS/plugin-container.app/Contents/MacOS/plugin-container -childID 14 -isForBrowser -prefsLen 23680 -schedulerPrefs 0001,2 -parentBuildID 20180830143136 -greomni /Applications/Firefox.app/Contents/Resources/omni.ja -appomni /Applications/Firefox.app/Contents/Resources/browser/omni.ja -appdir /Applications/Firefox.app/Contents/Resources/browser -profile /Users/mdmxlager/Library/Application Support/Firefox/Profiles/h6xsoon7.default 627 gecko-crash-server-pipe.627 org.mozilla.machname.48086202 tab
+ |--= 00645 root /System/Library/PrivateFrameworks/InstallerDiagnostics.framework/Versions/A/Resources/installerdiagd
+ |--= 00646 root /usr/libexec/rtcreportingd
+ |--= 00673 mdmxlager /System/Library/Frameworks/Security.framework/Versions/A/Resources/KeychainSyncingOverIDSProxy.bundle/Contents/MacOS/KeychainSyncingOverIDSProxy
+ |--= 01146 root /usr/libexec/applessdstatistics
+ |--= 01149 root /System/Library/PrivateFrameworks/PackageKit.framework/Resources/installd
+ |--= 01150 mdmxlager /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/storedownloadd
+ |--= 01151 root /System/Library/PrivateFrameworks/PackageKit.framework/Resources/system_installd
+ |--= 01154 mdmxlager /System/Library/Frameworks/MediaLibrary.framework/Versions/A/XPCServices/com.apple.MediaLibraryService.xpc/Contents/MacOS/com.apple.MediaLibraryService
+ |--= 01160 mdmxlager /System/Library/PrivateFrameworks/CoreSuggestions.framework/Versions/A/Support/reversetemplated
+ |--= 01280 mdmxlager /System/Library/Frameworks/ApplicationServices.framework/Frameworks/SpeechSynthesis.framework/Resources/com.apple.speech.speechsynthesisd
+ |--= 01281 mdmxlager /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+ |--= 01282 mdmxlager /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+ |--= 01543 mdmxlager /Applications/Telegram.app/Contents/MacOS/Telegram
+ |--= 01544 mdmxlager /System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/XPCServices/com.apple.hiservices-xpcservice.xpc/Contents/MacOS/com.apple.hiservices-xpcservice
+ |--= 01546 mdmxlager /System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper
+ |--= 01547 mdmxlager /System/Library/Frameworks/VideoToolbox.framework/Versions/A/XPCServices/VTDecoderXPCService.xpc/Contents/MacOS/VTDecoderXPCService
+ |--= 01548 mdmxlager /System/Library/Frameworks/MediaAccessibility.framework/Versions/A/XPCServices/com.apple.accessibility.mediaaccessibilityd.xpc/Contents/MacOS/com.apple.accessibility.mediaaccessibilityd
+ |--= 01664 mdmxlager /System/Library/CoreServices/OSDUIHelper.app/Contents/MacOS/OSDUIHelper
+ |--= 01994 mdmxlager /System/Library/Frameworks/Quartz.framework/Versions/A/Frameworks/QuickLookUI.framework/Versions/A/XPCServices/QuickLookUIService.xpc/Contents/MacOS/QuickLookUIService
+ |--= 02181 mdmxlager /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.single
+ |--= 02185 mdmxlager /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.single
+ |--= 02186 mdmxlager /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.single
+ |--= 02187 mdmxlager /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.single
+ |--= 02188 mdmxlager /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.single
+ |--= 02190 mdmxlager /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared
+ |--= 02211 mdmxlager /System/Library/CoreServices/CoreServicesUIAgent.app/Contents/MacOS/CoreServicesUIAgent
+ |--= 02228 mdmxlager /System/Library/Frameworks/Metal.framework/Versions/A/XPCServices/MTLCompilerService.xpc/Contents/MacOS/MTLCompilerService
+ |--= 02290 mdmxlager /Applications/Preview.app/Contents/MacOS/Preview -psn_0_348245
+ |--= 02291 mdmxlager /System/Library/PrivateFrameworks/XprotectFramework.framework/Versions/A/XPCServices/XprotectService.xpc/Contents/MacOS/XprotectService
+ |--= 02292 mdmxlager /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdwrite
+ |-+= 02294 mdmxlager /Applications/Utilities/Terminal.app/Contents/MacOS/Terminal
+ | \-+= 02295 root login -pf mdmxlager
+ |   \-+= 02296 mdmxlager -bash
+ |     \-+= 04486 mdmxlager bash task2.sh
+ |       |-+- 04490 mdmxlager ./task2
+ |       | |-+- 04492 mdmxlager ./task2
+ |       | | |-+- 04496 mdmxlager ./task2
+ |       | | | |-+- 04502 mdmxlager ./task2
+ |       | | | | |-+- 04512 mdmxlager ./task2
+ |       | | | | | \--- 04523 mdmxlager ./task2
+ |       | | | | \--- 04521 mdmxlager ./task2
+ |       | | | |-+- 04510 mdmxlager ./task2
+ |       | | | | \--- 04522 mdmxlager ./task2
+ |       | | | \--- 04519 mdmxlager ./task2
+ |       | | |-+- 04499 mdmxlager ./task2
+ |       | | | |-+- 04508 mdmxlager ./task2
+ |       | | | | \--- 04520 mdmxlager ./task2
+ |       | | | \--- 04517 mdmxlager ./task2
+ |       | | |-+- 04504 mdmxlager ./task2
+ |       | | | \--- 04515 mdmxlager ./task2
+ |       | | \--- 04514 mdmxlager ./task2
+ |       | |-+- 04494 mdmxlager ./task2
+ |       | | |-+- 04498 mdmxlager ./task2
+ |       | | | |-+- 04507 mdmxlager ./task2
+ |       | | | | \--- 04518 mdmxlager ./task2
+ |       | | | \--- 04516 mdmxlager ./task2
+ |       | | |-+- 04503 mdmxlager ./task2
+ |       | | | \--- 04513 mdmxlager ./task2
+ |       | | \--- 04511 mdmxlager ./task2
+ |       | |-+- 04495 mdmxlager ./task2
+ |       | | |-+- 04500 mdmxlager ./task2
+ |       | | | \--- 04509 mdmxlager ./task2
+ |       | | \--- 04506 mdmxlager ./task2
+ |       | |-+- 04497 mdmxlager ./task2
+ |       | | \--- 04505 mdmxlager ./task2
+ |       | \--- 04501 mdmxlager ./task2
+ |       \-+- 04491 mdmxlager pstree
+ |         \--- 04493 root ps -axwwo user,pid,ppid,pgid,command
+ |--= 02349 root /usr/sbin/ocspd
+ |--= 02357 mdmxlager /System/Library/Services/AppleSpell.service/Contents/MacOS/AppleSpell
+ |-+= 02427 mdmxlager /Applications/CLion.app/Contents/MacOS/clion
+ | \--- 02433 mdmxlager /Applications/CLion.app/Contents/bin/fsnotifier
+ |--= 02489 _netbios /usr/sbin/netbiosd
+ |--= 02493 mdmxlager /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.single
+ |--= 02494 mdmxlager /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.single
+ |--= 02549 mdmxlager /System/Library/PrivateFrameworks/DistributedEvaluation.framework/Versions/A/XPCServices/com.apple.siri-distributed-evaluation.xpc/Contents/MacOS/com.apple.siri-distributed-evaluation
+ |--= 02657 mdmxlager /System/Library/Frameworks/ColorSync.framework/Support/colorsync.useragent
+ |--= 04469 mdmxlager /System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.single
+ \--= 04479 mdmxlager /System/Library/Frameworks/QuickLook.framework/Resources/quicklookd.app/Contents/MacOS/quicklookd
