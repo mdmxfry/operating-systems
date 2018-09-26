@@ -2,7 +2,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 
-void exer1() {
+void task1() {
     int p_array[2];
     pipe(p_array);
     char string[] = "Я строка простая";
@@ -20,6 +20,6 @@ void exer1() {
 }
 
 int main () {
-    exer1();
+    task1();
     return 0;
 }
