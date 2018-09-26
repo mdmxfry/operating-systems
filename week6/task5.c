@@ -9,6 +9,7 @@ void task5() {
 
     if (process_id == 0) {
         while (1) {
+            // this print would be repeated till process termination
             printf("%s\n", "Sono vivo");
             sleep(2);
         }
@@ -17,7 +18,6 @@ void task5() {
         // send terminal signall
         kill(process_id, SIGTERM);
     }
-
 }
 
 int main(void)
