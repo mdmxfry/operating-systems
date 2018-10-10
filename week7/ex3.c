@@ -27,9 +27,11 @@ int main() {
     int n2 = 0;
     scanf("%d", &n2);
 
+    printf("%d\n", (int) (sizeof(a1)/sizeof(a1[0])));
     //Dynamically change the array to size n2
     a1 = realloc(a1, n2 * sizeof(int));
 
+    printf("%d\n", (int) (sizeof(a1)/sizeof(a1[0])));
     //If the new array is a larger size, set all new members to 0. Reason: dont want to use uninitialized variables.
 
     if(n2>n1){
