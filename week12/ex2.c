@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 
+/* HOW TO USE:
+ * emulates command tee in POSIX
+ * Example:
+ * echo hi | ./ex2 -a file1.txt file2.txt fileN.txt
+ * */
+
 char *read(){
     char *buffer = NULL;
     unsigned int len;
@@ -23,7 +29,7 @@ int main(int argc, char *argv[]) {
             strcpy(s, "a");
         }
 
-        for(int ct=1; ct<argc; ct++){
+        for(int ct=2; ct<argc; ct++){
             FILE *f = fopen(argv[ct], s);
             fprintf(f, "%s", buffer);
         }
