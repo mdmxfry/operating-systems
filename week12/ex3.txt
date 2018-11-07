@@ -1,0 +1,26 @@
+TEST 1:
+BUFFER_SIZE = 20
+O_SYNC OFF
+
+TIME:
+real     0.003s
+user     0.002s
+sys      0.001s
+
+TEST 2:
+BUFFER_SIZE = 10
+O_SYNC OFF
+
+real	 0.002s
+user	 0.003s
+sys	     0.000s
+
+TEST 3:
+BUFFER_SIZE = 10
+O_SYNC ON
+
+real	 0.002s
+user	 0.002s
+sys	     0.000s
+
+O_SYNC: File data and all file metadata are written synchronously to disk.
